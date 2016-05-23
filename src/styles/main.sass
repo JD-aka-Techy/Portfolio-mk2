@@ -1,0 +1,378 @@
+@import './resets/normalize.css'
+@import './resets/reset.css'
+
+/* TODO: rethink star animation for mobile */
+// Still mobile fisrt only
+//@import compass/reset
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700)
+
+@mixin center($horizontal: true, $vertical: true)
+  position: absolute
+  @if ($horizontal and $vertical)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  @else if ($horizontal)
+    left: 50%
+    transform: translate(-50%, 0)
+  @else if ($vertical)
+    top: 50%
+    transform: translate(0, -50%)
+
+
+/* Creates star field TODO: circular field to spin maybe add randomisation to star color and opacity*/
+@function create_stars($num)
+  $stars: '1714px 387px rgba(255,255,255, 0.2)'
+  @for $x from 0 to $num
+    $stars: '#{$stars} , #{random(2000)}px #{random(2000)}px rgba(255,255,255, 0.4)'
+
+  @return unquote($stars)
+
+/* Star animation */
+@keyframes move-stars
+  from
+    transform: translateY(0px) translateX(0px)
+  to
+    transform: translateY(-2000px) translateX(-2000px)
+
+/* Global vars */
+$background-col: #FAFAFF
+$highlight-col: #F4C838
+$font-col: rgba(black, 0.85)
+$main-font: 'Lato', sans-serif
+$card-border: 0.44rem double rgba(black, 0.2)
+
+/* Hero vars */
+$small-stars: 1200
+$big-stars: 400
+$hero-gradient: radial-gradient(ellipse at bottom, #1B2735 40%, #090A0F 100%)
+
+html, body
+  // root em
+  font-size: 16px
+  width: 100%
+  height: 100%
+  font-family: $main-font
+  color: $font-col
+  min-width: 320px
+
+#app
+  position: relative
+  height: 200%
+  width: 100%
+
+
+/* Hero background */
+.hero
+  position: fixed
+  padding-top: 60px
+  width: 100%
+  height: 100%
+  background: white
+  header
+    width: 100%
+    height: 60%
+    overflow: hidden
+    background: #161F2B
+    background: #090A0F linear-gradient(to top, #1B2735 40%, #090A0F 100%)
+    background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 0.6) 40%, rgba(9, 10, 15, 0.6) 100%), url('https://upload.wikimedia.org/wikipedia/commons/f/fd/Hubble_image_of_MACS_J0717_with_mass_overlay.jpg')
+
+    .big-stars
+      content: ''
+      height: 1px
+      width: 1px
+      box-shadow: create_stars($small-stars)
+      animation: move-stars 600s linear infinite
+    .small-stars
+      content: ''
+      height: 2px
+      width: 2px
+      box-shadow: create_stars($big-stars)
+      animation: move-stars 1000s linear infinite
+      // animate twinkle?
+    // TODO: name stuff needs to be more responsive
+    span
+      @include center(true,false)
+      top: 25%
+      transform: translateY(-50%, -50%)
+      text-align: center
+      width: 80%
+      font-size: 2.2rem
+      font-weight: 700
+      color: black
+      h1
+        color: white
+        padding-bottom: 0.2rem
+      h2
+        color: $highlight-col
+        font-size: 80%
+        font-size: 80%
+
+
+/* Wrappers */
+.siteWrap
+  position: absolute
+  top: 25%
+  width: 100%
+  margin: 0 auto
+
+.content
+  position: relative
+  box-sizing: border-box
+  margin: 0 auto
+  top: 25%
+  width: 90%
+  height: 100%
+  z-index: 1
+
+
+/* Card component */
+.card
+  padding: 2%
+  background: white
+  background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
+  border-radius: 1px
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+  margin-bottom: 2rem
+
+
+/* Section tag component */
+.section-tag
+  text-align: center
+  margin: 0 auto
+  font-size: 1.7em
+  color: rgba(black, 0.8)
+  padding-bottom: 1rem
+  span
+    color: rgba(black, 0.75)
+    font-size: 1.8rem
+    padding: 0 0.5rem
+    border-bottom: 0.25rem solid $highlight-col
+    font-family: $main-font
+    font-style: italic
+
+
+/* Introduction card */
+.intro
+  position: relative
+  padding: 1.5rem 0.5rem
+  font-size: 1.3rem
+  text-align: center
+  border-radius: 0.1rem
+  border: 0.44rem double rgba(black, 0.2)
+  p::first-of-type
+    padding-bottom: 1em
+  p
+    padding: 1rem 0em 0.5em 0em
+    line-height: 2rem
+    span
+      font-style: italic
+      font-size: 2.4rem
+      padding: 0 0.25rem
+      border-bottom: 0.25rem solid $highlight-col
+
+
+/* Work component */
+/* Single project section */
+.work
+  box-sizing: border-box
+  padding: 1em 1em 1em 1em
+  border: 0.44rem double rgba(black, 0.2)
+  position: relative
+
+.project
+  box-sizing: border-box
+  margin: 0 auto
+  width: 100%
+  position: relative
+
+.description
+  padding-top: -2%
+  .title
+    padding-bottom: 0.5em
+    font-weight: 700
+    color: rgba(black, 0.9)
+    span
+      padding: 0 0.2em
+      border-bottom: 0.2em solid $highlight-col
+  .main
+    padding: 0.3em
+    color: rgba(black, 0.8)
+    font-size: 0.9em
+
+.screen-wrap
+  //width: 100%
+  //margin: 0 auto
+  position: relative
+
+  &:after
+    padding-top: 60%
+    /* enforce ratio*/
+    display: block
+    content: ''
+  .screens
+    /* fill parent */
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+
+  .screen-l
+    width: 60%
+    height: 60%
+    background: green
+    top: 50%
+    left: 45%
+    border: 0.4em solid black
+    border-radius: 0.1em
+
+  .screen-m
+    width: 40%
+    height: 40%
+    background: yellow
+    top: 65%
+    left: 65%
+    border: 0.4em solid black
+    border-radius: 0.5em
+
+  .screen-s
+    width: 7%
+    height: 20%
+    background: purple
+    top: 80%
+    left: 45%
+    border: 0.3em solid black
+    border-radius: 0.3em
+  [class*="screen-"]
+    background: url('https://unsplash.it/600/300')
+    background-size: cover
+    position: absolute
+    overflow: hidden
+    transform: translate(-50%, -50%)
+    box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.33)
+
+/* Expeience/skills section */
+select
+  display: block
+  margin: 0 auto
+  padding: 0.3rem 0.3rem
+  user-select: none
+  border: none
+  background: $background-col
+  border-radius: 0.3rem
+  font-size: 1.2em
+  text-transform: uppercase
+  option
+
+.skills-wrap
+  box-sizing: border-box
+  padding: 1em
+  text-align: center
+  width: auto
+  margin: 0 auto
+  border: 0.44rem double rgba(black, 0.2)
+  li
+    box-sizing: border-box
+    display: inline-block
+    font-size: 2em
+    padding: 1rem
+    transition: font-size 0.3s linear
+    color: rgba(black, 0.5)
+
+  .active
+    color: rgba(black, 0.9)
+    font-size: 2.1em
+
+/* Testimonial Section */
+.card-content-wrap
+  //border: $card-border
+  text-align: center
+  padding: 6em 0
+
+.quote
+  box-sizing: border-box
+  position: relative
+  display: inline-block
+  border: $card-border
+  max-width: 250px
+  margin: 0.5rem
+  padding: 2rem 0.5rem 0rem 0.5rem
+  box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+  background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
+
+img
+  display: block
+  position: relative
+  border-radius: 50%
+  width: 60%
+  max-width: 200px
+  left: 50%
+  transform: translateX(-50%)
+
+blockquote
+  padding: 1rem 0.2rem 2rem 0.2rem
+  text-align: center
+  q
+    line-height: 20px
+  cite
+    font-size: 1.3em
+    span
+      font-family: serif
+      display: block
+      padding: 1px
+    span:last-child
+      font-family: sans-serif
+
+      font-size: 70%
+      font-style: italic
+      padding-bottom: 0.5rem
+      color: $highlight-col
+
+
+/* Site Footer */
+// provides backing for Contact pseudo and covers background fixed element
+.footer-spacer
+  z-index: 0
+  position: relative
+  height: 10em
+  width: 100%
+  background: white
+  &:before
+    position: absolute
+    height: 30em
+    top: -30em
+    width: 100%
+    background: white
+    content: ''
+
+.site-footer
+  position: relative
+  bottom: 0
+  background: #1D1F20
+  width: 100%
+  z-index: 2
+  box-sizing: border-box
+  padding: 3em 0
+  &:before
+    color: #1D1F20
+    position: absolute
+    top: -56px
+    text-align: center
+    width: 100%
+    font-size: 4em
+    font-weight: 700
+    content: 'Contact'
+
+  a, a:visited
+    color: white
+    text-decoration: none
+  a:hover
+    color: $highlight-col
+    text-decoration: underline
+  ul
+    width: 100%
+    text-align: center
+    li
+      font-size: 2em
+      padding: 0.5em
