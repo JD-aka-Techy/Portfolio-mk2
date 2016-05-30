@@ -13,16 +13,23 @@ export const skills = [
   { skill: 'MongoDb', groups: ['back'] },
   { skill: 'SQL', groups: ['back'] },
   { skill: 'D3', groups: ['front', 'tool', 'framework'] }
-//express
-//
 
 ];
 
 export const contactInfo = [
-  { text: "LinkedIn", link: "https://uk.linkedin.com/in/james-davenport-ba448098" },
-  { text: "Twitter", link: "https://twitter.com/JD_aka_Techy" },
-  { text: "Github", link: "https://github.com/JD-aka-Techy" }
+  { 'text': "LinkedIn", 'link': "https://uk.linkedin.com/in/james-davenport-ba448098" },
+  { 'text': "Twitter", 'link': "https://twitter.com/JD_aka_Techy" },
+  { 'text': "Github", 'link': "https://github.com/JD-aka-Techy" }
 ];
+
+
+export const testimonials = [
+  { 'name': 'tempname1', 'role': 'temprole1', 'review': 'tempreview1', 'image': 'tempimage1' },
+  { 'name': 'tempname2', 'role': 'temprole2', 'review': 'tempreview2', 'image''tempimage2' },
+  { 'name': 'tempname3', 'role': 'temprole3', 'review': 'tempreview3', 'image''tempimage3' },
+  { 'name': 'tempname4', 'role': 'temprole4', 'review': 'tempreview4', 'image''tempimage4' }
+];
+
 
 
 /* end of temp data */
