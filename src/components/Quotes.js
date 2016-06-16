@@ -69,7 +69,6 @@ class Quotes extends Component {
         nums = (width > 900 && width < 1200)
                ? 3 : 4;
 
-        console.log(width, nums, this.props.quotes.slice(0,nums-1))
     return (
       <div className="card-content-wrap">
         {

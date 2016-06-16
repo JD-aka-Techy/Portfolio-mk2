@@ -37,7 +37,7 @@ class SkillsDisplay extends Component {
         <ul className="skills-wrap">
           <select onChange={ (e) => this.changeActive(e) }>
             <option >all</option>
-            { this.state.groups.map( (group) => <option>{ group }</option> ) }
+            { this.state.groups.map( (group,i) => <option key={i}>{ group }</option> ) }
           </select>
           { this.state.skills.map((skill,i) => (
                 <Skill skill={ skill } activeClass={ activeClass } key={i}/>
