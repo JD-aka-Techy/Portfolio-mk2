@@ -1,4 +1,14 @@
 /* Temporary data */
+
+export const work = [
+  {'title': 'title one','description': 'ima a description', 'deskimg': 'https://placemat.imgix.net/placeholder_images/images/000/000/088/original/17600376295_1d8edc7275_b.jpg?ixlib=rb-1.0.0&w=410&h=620&fm=auto&crop=faces%2Centropy&fit=crop&txt=410%C3%97620&txtclr=BFFF&txtalign=middle%2Ccenter&txtfit=max&txtsize=42&txtfont=Avenir+Next+Demi%2CBold&bm=multiply&blend=ACACAC&s=d626519916bba2e67c5137e6260b67c5', 'tabimg': '', 'mobimg': '#'},
+  {'title': 'title two','description': 'me too', 'deskimg': '#', 'tabimg': '', 'mobimg': '#'},
+  {'title': 'title three','description': 'ima a description also', 'deskimg': '#', 'tabimg': '', 'mobimg': '#'}
+]
+
+
+
+
 export const skills = [
   { skill: 'PHP', groups: ['back', 'language'] },
   { skill: 'Js', groups: ['front','back','language'] },
@@ -12,7 +22,9 @@ export const skills = [
   { skill: 'Node.js', groups:['back'] },
   { skill: 'MongoDb', groups: ['back'] },
   { skill: 'SQL', groups: ['back'] },
-  { skill: 'D3', groups: ['front', 'tool', 'framework'] }
+  { skill: 'D3', groups: ['front', 'tool', 'framework'] },
+  { skill: 'Redux', groups: ['front', 'framework'] },
+
 
 ];
 

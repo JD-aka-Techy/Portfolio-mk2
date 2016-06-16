@@ -5,13 +5,16 @@ import Card from './Card'
 /*
 * Represents Work card
 */
-const Work = () => (
+const Work = ({ projects }) => (
   (
     <Card>
       <div className="work">
         <SectionTag text={"Work"}/>
-        <Project />
-        <Project />
+        {
+          projects.map( (project, i) => <Project key={i} project={ project }/>)
+        }
+
+
       </div>
     </Card>
   )

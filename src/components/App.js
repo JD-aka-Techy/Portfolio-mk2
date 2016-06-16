@@ -9,7 +9,7 @@ import SiteFooter from './SiteFooter';
 import Hero from './Hero';
 
 /* Temporary data */
-import { skills, contactInfo, testimonials } from '../data/mainData';
+import { work, skills, contactInfo, testimonials } from '../data/mainData';
 
 /*
   Main application wrapper
@@ -21,7 +21,7 @@ const App = ( ) => (
       <div className="siteWrap">
         <div className="content">
           <Intro />
-          <Work />
+          <Work projects={work}/>
           <SkillsDisplay skills={skills} />
           <Quotes quotes={testimonials}/>
         </div>

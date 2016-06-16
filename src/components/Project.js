@@ -3,21 +3,28 @@ import React from 'react';
 /*
   A single project component
 */
-const Project = () => (
+const Project = ({ project }) => (
   (
     <div className="project">
       <div className="screen-wrap">
         <div className="screens">
-          <div className="screen-l"></div>
-          <div className="screen-m"></div>
-          <div className="screen-s"></div>
+          <div className="screen-l"
+               style={{'background': `url(${project.deskimg})`}}>
+          </div>
+          <div className="screen-m"
+              style={{'background': `url(${project.tabimg})`}}>
+          </div>
+          <div className="screen-s"
+               style={{'background': `url(${project.mobimg})`}}>
+          </div>
         </div>
       </div>
       <div className="description">
         <div className="title">
-          <span>Lorem ipsum dolor</span>
+          <span>{project.title}</span>
         </div>
-        <div className="main"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam saepe adipisci hic minima, perspiciatis, porro odit nobis repudiandae amet quidem similique praesentium nesciunt voluptatibus totam natus maiores ab assumenda tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam saepe adipisci hic minima, perspiciatis, porro odit nobis repudiandae amet quidem similique praesentium nesciunt voluptatibus totam natus maiores ab assumenda tempore.
+        <div className="main">
+          { project.description }
         </div>
       </div>
     </div>
