@@ -42,8 +42,8 @@ const throttle = function(func, wait) {
 */
 class Quotes extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       width: window.innerWidth
     };
@@ -68,11 +68,13 @@ class Quotes extends Component {
     let width = this.state.width,
         nums = (width > 900 && width < 1200)
                ? 3 : 4;
+
+        console.log(width, nums, this.props.quotes.slice(0,nums-1))
     return (
       <div className="card-content-wrap">
         {
-          //Array(nums).fill(0).map( (i) => <Quote /> )
-          Array.apply(null, {length: nums}).map((i) => <Quote />)
+          this.props.quotes.slice(0,nums)
+                    .map((quote, i) => <Quote key={i} quote={quote}/>)
         }
       </div>
     )

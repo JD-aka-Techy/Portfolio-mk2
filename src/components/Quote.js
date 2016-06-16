@@ -3,16 +3,16 @@ import React from 'react';
 /*
   Single quote component.
 */
-const Quote = ( { name, role, review, image } ) => (
+const Quote = ( { quote } ) => (
   (
     <div className="quote" >
-        <img src={ image } />
+        <img src={ quote.image } />
       <blockquote>
         <cite>
-          <span>{ name }</span>
-          <span>{ role }</span>
+          <span>{ quote.name }</span>
+          <span>{ quote.role }</span>
         </cite>
-        <q>{ review }</q>
+        <q>{ quote.review }</q>
       </blockquote>
     </div>
   )

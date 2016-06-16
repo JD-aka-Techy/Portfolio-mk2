@@ -25,9 +25,11 @@ export const contactInfo = [
 
 export const testimonials = [
   { 'name': 'tempname1', 'role': 'temprole1', 'review': 'tempreview1', 'image': 'tempimage1' },
-  { 'name': 'tempname2', 'role': 'temprole2', 'review': 'tempreview2', 'image''tempimage2' },
-  { 'name': 'tempname3', 'role': 'temprole3', 'review': 'tempreview3', 'image''tempimage3' },
-  { 'name': 'tempname4', 'role': 'temprole4', 'review': 'tempreview4', 'image''tempimage4' }
+  { 'name': 'tempname2', 'role': 'temprole2', 'review': 'tempreview2', 'image':'tempimage2' },
+  { 'name': 'tempname3', 'role': 'temprole3', 'review': 'tempreview3', 'image':'tempimage3' },
+  { 'name': 'tempname4', 'role': 'temprole4', 'review': 'tempreview4', 'image':'tempimage4' },
+  { 'name': 'tempname5', 'role': 'temprole3', 'review': 'tempreview3', 'image':'tempimage3' },
+  { 'name': 'tempname6', 'role': 'temprole4', 'review': 'tempreview4', 'image':'tempimage4' }
 ];
 
 
