@@ -3,7 +3,7 @@ const { Component } = React;
 import Quote from './Quote';
 
 /*
-  throttle function for performance
+  throttle function for performance - underscore.js -
 */
 const throttle = function(func, wait) {
     var context, args, result;
@@ -55,11 +55,11 @@ class Quotes extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", throttle(this.updateDimensions.bind(this), 500));
+    window.addEventListener("resize", throttle( () => this.updateDimensions(), 500));
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions.bind(this));
+    window.removeEventListener("resize", () => this.updateDimensions() );
   }
 
 

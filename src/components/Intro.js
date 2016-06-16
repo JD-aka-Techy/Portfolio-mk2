@@ -5,13 +5,14 @@ import SectionTag from './SectionTag';
 /*
   Intro section component.
 */
-const Intro = () => (
+const Intro = ({ intro }) => (
   (
     <Card>
       <div className="intro">
-        <SectionTag text={"Hi there"} />
-        <p>I'm James, a Manchester based Web Developer and all around code monkey doing what I love the most...</p>
-        <p>Creating high-quality, personalised and responsive applications for mobile and web.</p>
+        <SectionTag text={intro.greeting} />
+        {
+          intro.paragraphs.map((para,i) => <p key={i}>{para}</p>)
+        }
       </div>
     </Card>
   )

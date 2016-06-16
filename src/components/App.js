@@ -8,8 +8,8 @@ import Quotes from './Quotes';
 import SiteFooter from './SiteFooter';
 import Hero from './Hero';
 
-/* Temporary data */
-import { work, skills, contactInfo, testimonials } from '../data/mainData';
+/* Temporary data TODO: clean this up*/
+import { intro, work, skills, contactInfo, testimonials } from '../data/mainData';
 
 /*
   Main application wrapper
@@ -20,7 +20,7 @@ const App = ( ) => (
       <Hero />
       <div className="siteWrap">
         <div className="content">
-          <Intro />
+          <Intro intro={intro}/>
           <Work projects={work}/>
           <SkillsDisplay skills={skills} />
           <Quotes quotes={testimonials}/>
