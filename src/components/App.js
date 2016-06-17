@@ -7,9 +7,10 @@ import SkillsDisplay from './SkillsDisplay';
 import Quotes from './Quotes';
 import SiteFooter from './SiteFooter';
 import Hero from './Hero';
+import Nav from './Navigation';
 
 /* Temporary data TODO: clean this up*/
-import { intro, work, skills, contactInfo, testimonials } from '../data/mainData';
+import { navLinks, intro, work, skills, contactInfo, testimonials } from '../data/mainData';
 
 /*
   Main application wrapper
@@ -17,6 +18,7 @@ import { intro, work, skills, contactInfo, testimonials } from '../data/mainData
 const App = ( ) => (
   (
     <div className="app">
+      <Nav links = {navLinks} />
       <Hero />
       <div className="siteWrap">
         <div className="content">

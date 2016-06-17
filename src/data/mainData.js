@@ -1,5 +1,13 @@
 /* Temporary data */
 
+export const navLinks = [
+  {'name': 'Home', location: '#' },
+  {'name': 'Work', location: '#' },
+  {'name': 'Skills', location: '#' },
+  {'name': 'Testimonials', location: '#' },
+  {'name': 'Contact', location: '#' }
+];
+
 export const intro = {
   'greeting' : 'Hi there',
   'paragraphs': [

@@ -147,6 +147,49 @@ html, body
     font-family: $main-font
     font-style: italic
 
+/*Navigation  */
+.main-navigation
+  position: fixed
+  width: 100%
+  text-align: center
+  font-size: 1.3em
+  background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'),  rgba($background-col, 1)
+  z-index: 999
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+.nav-bar
+  //position: fixed
+  // larger than needed max-height
+  max-height: 0px
+  overflow: hidden
+  transition: max-height 0.3s
+  li
+    display: block
+    a
+      display: block
+      padding: 1em 0
+      height: 100%
+      width: 100%
+      color: $font-col
+      text-decoration: none
+      transition: color 0.1s ease
+      &:hover
+        color: $highlight-col
+        text-decoration: underline
+
+
+.nav-open
+  // max-height larger than needed
+  max-height: 500px
+
+.nav-toggle
+  padding: 0.6em 0
+  cursor: pointer
+  border: $card-border
+  margin: 2px
+  &:hover
+    color: $highlight-col
+
+
 
 /* Introduction card */
 .intro
@@ -374,3 +417,21 @@ blockquote
     li
       font-size: 2em
       padding: 0.5em
+
+
+@media(min-width: 600px)
+  
+  .nav-bar
+    max-height: 500px
+    text-align: left
+    padding-left: 1em
+
+    
+    li
+      display: inline-block
+      a
+        padding: 1em
+    
+  
+  .nav-toggle
+    display: none
