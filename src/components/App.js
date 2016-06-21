@@ -20,7 +20,7 @@ const App = ( ) => (
     <div className="app">
       <Nav links = {navLinks} />
       <Hero />
-      <div className="siteWrap">
+      <div className="site-wrap">
         <div className="content">
           <Intro intro={intro}/>
           <Work projects={work}/>
