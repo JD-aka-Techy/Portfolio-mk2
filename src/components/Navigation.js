@@ -18,18 +18,18 @@ const NavLink = ({ link, onClick}) => (
   Site navigation component
 */
 class Nav extends Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
-      open: true
+      open: false
     }
   }
-  
+
   toggleNav() {
     this.setState({ open: !this.state.open });
   }
-  
+
   render() {
     const open = this.state.open;
     return (

@@ -35,9 +35,3 @@ const App = ( ) => (
 );
 
 export default App;
-
-/*  {
-  {'name': 'Work', location: '#work-anchor' },
-  {'name': 'Skills', location: '#skills-anchor' },
-  {'name': 'Testimonials', location: '#testimonials-anchor' },
-  {'name': 'Contact', location: '#contact-anchor' }*/

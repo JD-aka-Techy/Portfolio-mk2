@@ -139,7 +139,7 @@ html, body
   margin: 0 auto
   font-size: 1.7em
   color: rgba(black, 0.8)
-  padding-bottom: 1rem
+  padding: 1rem 0
   span
     color: rgba(black, 0.75)
     font-size: 1.8rem
@@ -215,6 +215,8 @@ html, body
       font-size: 2.4rem
       padding: 0 0.25rem
       border-bottom: 0.25rem solid $highlight-col
+  img
+    display: none
 
 
 /* Work component */
@@ -349,33 +351,33 @@ select
   box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
   background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
 
-img
-  display: block
-  position: relative
-  border-radius: 50%
-  width: 60%
-  max-width: 200px
-  left: 50%
-  transform: translateX(-50%)
+  img
+    display: block
+    position: relative
+    border-radius: 50%
+    width: 60%
+    max-width: 200px
+    left: 50%
+    transform: translateX(-50%)
 
-blockquote
-  padding: 1rem 0.2rem 2rem 0.2rem
-  text-align: center
-  q
-    line-height: 20px
-  cite
-    font-size: 1.3em
-    span
-      font-family: serif
-      display: block
-      padding: 1px
-    span:last-child
-      font-family: sans-serif
+  blockquote
+    padding: 1rem 0.2rem 2rem 0.2rem
+    text-align: center
+    q
+      line-height: 20px
+    cite
+      font-size: 1.3em
+      span
+        font-family: serif
+        display: block
+        padding: 1px
+      span:last-child
+        font-family: sans-serif
 
-      font-size: 70%
-      font-style: italic
-      padding-bottom: 0.5rem
-      color: $highlight-col
+        font-size: 70%
+        font-style: italic
+        padding-bottom: 0.5rem
+        color: $highlight-col
 
 
 /* Site Footer */
@@ -424,6 +426,36 @@ blockquote
     li
       font-size: 2em
       padding: 0.5em
+
+
+@media(min-width: 1000px)
+
+  .intro
+    padding: 2rem
+    .intro-text
+      box-sizing: border-box
+      display: inline-block
+      width: 60%
+      padding-right: 2rem
+      text-align: left
+
+    img
+      position:relative
+      width: 40%
+      height: 100%
+      display: inline-block
+
+  .project .description, .project .screen-wrap
+    display: inline-block
+
+  .project .screen-wrap
+    width: 60%
+
+  .project .description
+    position: absolute
+    top: 40%
+    transform: translateY(-30%)
+    width: 40%
 
 
 @media(min-width: 600px)
