@@ -1,5 +1,8 @@
-/* Temporary data */
+/*
+  file contains data to be fed into Application
+*/
 
+// Links listed in navigation menu
 export const navLinks = [
   {'name': 'Home', location: '#home' },
   {'name': 'Work', location: '#work' },
@@ -8,6 +11,7 @@ export const navLinks = [
   {'name': 'Contact', location: '#contact' }
 ];
 
+// introduction text
 export const intro = {
   'greeting' : 'Hi there',
   'paragraphs': [
@@ -17,21 +21,81 @@ export const intro = {
   ]
 };
 
+// How many full layout projects to display. others will be placed in a slider.
+export const fullSizeProjNum = 3;
 
+// Work projects
 export const work = [
-  {'title': 'title one','description': 'ima a description', 'deskimg': 'https://placemat.imgix.net/placeholder_images/images/000/000/088/original/17600376295_1d8edc7275_b.jpg?ixlib=rb-1.0.0&w=410&h=620&fm=auto&crop=faces%2Centropy&fit=crop&txt=410%C3%97620&txtclr=BFFF&txtalign=middle%2Ccenter&txtfit=max&txtsize=42&txtfont=Avenir+Next+Demi%2CBold&bm=multiply&blend=ACACAC&s=d626519916bba2e67c5137e6260b67c5', 'tabimg': '', 'mobimg': '#'},
-  {'title': 'title two','description': 'me too', 'deskimg': '#', 'tabimg': '', 'mobimg': '#'},
-  {'title': 'title three','description': 'ima a description also', 'deskimg': '#', 'tabimg': '', 'mobimg': '#'}
+  {
+    'title': 'FreeCodeCamp Manchester Website',
+    'description': [
+      `Home page and Resource sharing website built for the
+       FreeCodeCamp Manchester User group.`,
+      `Built using React.js, jsx, React-router, Jade, Sass, ES6 and Webpack.`,
+      `Initial prototyping was done with bootstrap 4 however It is being phased out
+      in favour of native styles`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': []
+  },
+  {
+    'title': 'Ebony Feare - Actress Portfolo',
+    'description': [
+      `A custom WordPress Template designed, built and deployed to
+      the clients specifications and preferences.`,
+      `The template itself was built from scratch takings queues from several
+      example websites and a pallete and layout style chosen by the client.
+      `
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': []
+  },
+  {
+    'title': 'Sheep Knuckle Art & Chat-Room',
+    'description': [
+      `Consultant and prototype developer for the creation of a Processing.js
+      based data visualisation linked to an SQL database fed by a Chat room
+      and string parser collating the "emotional intent" of each message.`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': []
+  },
+  {
+    'title': 'Appition',
+    'description': [
+      `Development of a prototype native android application/ social game
+       for a Finnish startup.`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': []
+  }
 ];
 
+// Practice projects
+export const practiceWork = [
+  {
+    'title': 'first',
+    'description': [],
+    slides: []
+  }
+];
 
+// skills section skill info
 export const skills = [
   { 'skill': 'PHP', 'groups': ['back', 'language'] },
   { 'skill': 'Js', 'groups': ['front','back','language'] },
   { 'skill': 'HTML5', 'groups': ['front', 'language'] },
   { 'skill': 'CSS', 'groups': ['front', 'language'] },
-  { 'skill': 'React', 'groups': ['front', 'framework'] },
-  { 'skill': 'Angular', 'groups': ['front', 'framework'] },
+  { 'skill': 'React.js', 'groups': ['front', 'framework'] },
+  { 'skill': 'Angular.js', 'groups': ['front', 'framework'] },
   { 'skill': 'Wordpress', 'groups': ['back','front', 'framework'] },
   { 'skill': 'Git', 'groups': ['tool'] },
   { 'skill': 'TDD', 'groups':['tool'] },
@@ -40,26 +104,44 @@ export const skills = [
   { 'skill': 'SQL', 'groups': ['back'] },
   { 'skill': 'D3', 'groups': ['front', 'tool', 'framework'] },
   { 'skill': 'Redux', 'groups': ['front', 'framework'] },
-  { 'skill': 'JQuery', 'groups': ['front', 'tool'] }
-
+  { 'skill': 'JQuery', 'groups': ['front', 'tool'] },
+  { 'skill': 'Webpack', 'groups': ['tool'] },
+  { 'skill': 'Gulp', 'groups': ['tool'] },
+  { 'skill': 'Express', 'groups': ['back'] },
+  { 'skill': 'Bootstrap', 'groups': ['front','tool'] }
 ];
 
+// contact section links
 export const contactInfo = [
   { 'text': "LinkedIn", 'link': "https://uk.linkedin.com/in/james-davenport-ba448098" },
   { 'text': "Twitter", 'link': "https://twitter.com/JD_aka_Techy" },
   { 'text': "Github", 'link': "https://github.com/JD-aka-Techy" }
 ];
 
-
+// testimoinal information
 export const testimonials = [
-  { 'name': 'tempname1', 'role': 'temprole1', 'review': 'tempreview1', 'image': 'tempimage1' },
-  { 'name': 'tempname2', 'role': 'temprole2', 'review': 'tempreview2', 'image':'tempimage2' },
-  { 'name': 'tempname3', 'role': 'temprole3', 'review': 'tempreview3', 'image':'tempimage3' },
-  { 'name': 'tempname4', 'role': 'temprole4', 'review': 'tempreview4', 'image':'tempimage4' },
-  { 'name': 'tempname5', 'role': 'temprole3', 'review': 'tempreview3', 'image':'tempimage3' },
-  { 'name': 'tempname6', 'role': 'temprole4', 'review': 'tempreview4', 'image':'tempimage4' }
+  {
+    'name': 'tempname1',
+    'role': 'temprole1',
+    'review': 'tempreview1',
+    'image': 'tempimage1'
+  },
+  {
+    'name': 'tempname1',
+    'role': 'temprole1',
+    'review': 'tempreview1',
+    'image': 'tempimage1'
+  },
+  {
+    'name': 'tempname1',
+    'role': 'temprole1',
+    'review': 'tempreview1',
+    'image': 'tempimage1'
+  },
+  {
+    'name': 'tempname1',
+    'role': 'temprole1',
+    'review': 'tempreview1',
+    'image': 'tempimage1'
+  }
 ];
-
-
-
-/* end of temp data */

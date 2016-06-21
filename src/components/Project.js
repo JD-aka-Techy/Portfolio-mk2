@@ -26,7 +26,9 @@ const Description = ({ project }) => (
         <span>{project.title}</span>
       </div>
       <div className="main">
-        { project.description }
+        {
+          project.description.map( (para, i) => <p key={i}>{ para }</p>  )
+        }
       </div>
     </div>
   )

@@ -5,14 +5,14 @@ import Card from './Card'
 /*
 * Represents Work card
 */
-const Work = ({ projects }) => (
+const Work = ({ projects, fullSizeProjNum }) => (
   (
     <Card>
       <element  className="nav-anchor" id="work"></element>
       <div className="work">
         <SectionTag text={"Work"}/>
         {
-          projects.map( (project, i) => <Project key={i} project={ project }/>)
+          projects.slice(0,fullSizeProjNum).map( (project, i) => <Project key={i} project={ project }/>)
         }
 
 
