@@ -71,6 +71,7 @@ class Quotes extends Component {
 
     return (
       <div className="card-content-wrap">
+        <element  className="nav-anchor" id="testimonials"></element>
         {
           this.props.quotes.slice(0,nums)
                     .map((quote, i) => <Quote key={i} quote={quote}/>)

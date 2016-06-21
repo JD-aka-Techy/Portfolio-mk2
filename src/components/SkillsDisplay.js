@@ -33,6 +33,7 @@ class SkillsDisplay extends Component {
     let activeClass = this.state.active;
     return (
       <Card>
+        <element  className="nav-anchor" id="skills"></element>
         <SectionTag text={"I am experienced with"} />
         <ul className="skills-wrap">
           <select onChange={ (e) => this.changeActive(e) }>

@@ -1,11 +1,11 @@
 /* Temporary data */
 
 export const navLinks = [
-  {'name': 'Home', location: '#' },
-  {'name': 'Work', location: '#' },
-  {'name': 'Skills', location: '#' },
-  {'name': 'Testimonials', location: '#' },
-  {'name': 'Contact', location: '#' }
+  {'name': 'Home', location: '#home' },
+  {'name': 'Work', location: '#work' },
+  {'name': 'Skills', location: '#skills' },
+  {'name': 'Testimonials', location: '#testimonials' },
+  {'name': 'Contact', location: '#contact' }
 ];
 
 export const intro = {

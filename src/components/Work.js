@@ -8,6 +8,7 @@ import Card from './Card'
 const Work = ({ projects }) => (
   (
     <Card>
+      <element  className="nav-anchor" id="work"></element>
       <div className="work">
         <SectionTag text={"Work"}/>
         {

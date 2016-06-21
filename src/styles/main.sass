@@ -124,6 +124,7 @@ html, body
 
 /* Card component */
 .card
+  position: relative
   padding: 2%
   background: white
   background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
@@ -146,6 +147,11 @@ html, body
     border-bottom: 0.25rem solid $highlight-col
     font-family: $main-font
     font-style: italic
+
+// navigation link scroll location
+.nav-anchor
+  position: absolute
+  top: -70px
 
 /*Navigation  */
 .main-navigation
@@ -327,6 +333,7 @@ select
 /* Testimonial Section */
 .card-content-wrap
   //border: $card-border
+  position: relative
   text-align: center
   padding: 6em 0
 
@@ -420,18 +427,18 @@ blockquote
 
 
 @media(min-width: 600px)
-  
+
   .nav-bar
     max-height: 500px
     text-align: left
     padding-left: 1em
 
-    
+
     li
       display: inline-block
       a
         padding: 1em
-    
-  
+
+
   .nav-toggle
     display: none

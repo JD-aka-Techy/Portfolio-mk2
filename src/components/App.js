@@ -17,7 +17,7 @@ import { navLinks, intro, work, skills, contactInfo, testimonials } from '../dat
 */
 const App = ( ) => (
   (
-    <div className="app">
+    <div className="app" id="home">
       <Nav links = {navLinks} />
       <Hero />
       <div className="site-wrap">
@@ -35,3 +35,9 @@ const App = ( ) => (
 );
 
 export default App;
+
+/*  {
+  {'name': 'Work', location: '#work-anchor' },
+  {'name': 'Skills', location: '#skills-anchor' },
+  {'name': 'Testimonials', location: '#testimonials-anchor' },
+  {'name': 'Contact', location: '#contact-anchor' }*/
