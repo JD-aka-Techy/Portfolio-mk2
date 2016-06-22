@@ -354,8 +354,10 @@ html, body
   display: inline-block
   position: relative
   height: 100%
-  width: 33.33%
+  width: 20%
   background-size: cover
+  &.active
+    width: 60%
   &:hover > .details, &:focus > .details
     opacity: 1
   .details
@@ -363,7 +365,7 @@ html, body
     position: absolute
     background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
     top: 80%
-    width: 160%
+    width: 120%
     left: 50%
     min-height: 50%
     transform: translateX(-50%)

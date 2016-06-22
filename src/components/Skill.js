@@ -5,11 +5,9 @@ import React from 'react';
 */
 const Skill = ({ skill, activeClass, i }) => (
   (
-    <li
-      className={ skill.groups.indexOf(activeClass) >= 0
-                  || activeClass == 'all'
-                  ? 'active' : '' }
-       >
+    <li className={(skill.groups.indexOf(activeClass) >= 0
+                    || activeClass == 'all')
+                    && 'active'}>
       {skill.skill}
     </li>
   )

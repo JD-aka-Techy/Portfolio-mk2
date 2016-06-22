@@ -6,7 +6,7 @@ import SectionTag from './SectionTag';
 */
 const Slide = ({ index, data }) => (
   (
-    <div className="slide"
+    <div className={index === 1 ? "slide active" : "slide"}
        style={{'backgroundImage': 'url(' + data.slides[0] + ')'}}>
       { index === 1
       ? <div className="card details">

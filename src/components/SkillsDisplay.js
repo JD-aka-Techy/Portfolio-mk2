@@ -41,7 +41,9 @@ class SkillsDisplay extends Component {
             { this.state.groups.map( (group,i) => <option key={i}>{ group }</option> ) }
           </select>
           { this.state.skills.map((skill,i) => (
-                <Skill skill={ skill } activeClass={ activeClass } key={i}/>
+                <Skill skill={ skill }
+                       activeClass={ activeClass }
+                       key={i}/>
             )) }
         </ul>
       </Card>

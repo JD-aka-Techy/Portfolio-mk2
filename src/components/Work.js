@@ -14,7 +14,8 @@ const Work = ({ projects, fullSizeProjNum, practiceWork }) => (
       <div className="work">
         <SectionTag text={"Work"}/>
         {
-          projects.slice(0,fullSizeProjNum).map( (project, i) => <Project key={i} project={ project }/>)
+          projects.slice(0,fullSizeProjNum)
+                  .map( (project, i) => <Project key={i} project={ project }/>)
         }
         {
           projects.slice(fullSizeProjNum).length > 2 &&
