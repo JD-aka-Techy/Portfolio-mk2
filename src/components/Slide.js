@@ -12,7 +12,8 @@ const Slide = ({ index, data }) => (
       ? <div className="card details">
           <div className="section-tag"><span>{ data.title }</span></div>
           <p>
-            { data.description }
+            { data.description.map(para => <p>para</p>) }
+            { data.tech.map(tech => <p>tech used: { tech + ", " }</p>)}
             <a href={ data.uri } > more...</a>
           </p>
         </div>

@@ -9,10 +9,12 @@ import SiteFooter from './SiteFooter';
 import Hero from './Hero';
 import Nav from './Navigation';
 
+
 /* Temporary data TODO: clean this up*/
-import { navLinks, intro, fullSizeProjNum, work,
+import data from '../data/mainData'
+const { navLinks, intro, fullSizeProjNum, work,
          practiceWork, skills, contactInfo,
-         testimonials } from '../data/mainData';
+         testimonials } = data;
 
 /*
   Main application wrapper

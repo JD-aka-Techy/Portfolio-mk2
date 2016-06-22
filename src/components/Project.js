@@ -29,6 +29,7 @@ const Description = ({ project }) => (
         {
           project.description.map( (para, i) => <p key={i}>{ para }</p>  )
         }
+        <p className="tech">tech used: { project.tech.map(tech => tech + ", ")  }</p>
       </div>
     </div>
   )
