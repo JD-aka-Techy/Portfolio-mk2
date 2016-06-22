@@ -36,7 +36,7 @@ class Nav extends Component {
       <nav className="main-navigation">
         <ul className={ open ? "nav-bar nav-open" : "nav-bar"}>
           {
-            this.props.links.map((link) => <NavLink link={link} onClick={ () => this.toggleNav() }/>)
+            this.props.links.map((link, i) => <NavLink key={i} link={link} onClick={ () => this.toggleNav() }/>)
           }
         </ul>
         <div className="nav-toggle"

@@ -10,7 +10,9 @@ import Hero from './Hero';
 import Nav from './Navigation';
 
 /* Temporary data TODO: clean this up*/
-import { navLinks, intro, fullSizeProjNum, work, skills, contactInfo, testimonials } from '../data/mainData';
+import { navLinks, intro, fullSizeProjNum, work,
+         practiceWork, skills, contactInfo,
+         testimonials } from '../data/mainData';
 
 /*
   Main application wrapper
@@ -23,7 +25,9 @@ const App = ( ) => (
       <div className="site-wrap">
         <div className="content">
           <Intro intro={intro}/>
-          <Work fullSizeProjNum={fullSizeProjNum} projects={work} />
+          <Work fullSizeProjNum={fullSizeProjNum}
+                projects={work}
+                practiceWork={practiceWork}/>
           <SkillsDisplay skills={skills} />
           <Quotes quotes={testimonials}/>
         </div>

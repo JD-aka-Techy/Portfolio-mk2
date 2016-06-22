@@ -38,7 +38,8 @@ export const work = [
     'deskimg': '#',
     'tabimg': '#',
     'mobimg': '#',
-    'slides': []
+    'slides': ['#'],
+    'uri': '#'
   },
   {
     'title': 'Ebony Feare - Actress Portfolo',
@@ -52,7 +53,8 @@ export const work = [
     'deskimg': '#',
     'tabimg': '#',
     'mobimg': '#',
-    'slides': []
+    'slides': ['#'],
+    'uri': '#'
   },
   {
     'title': 'Sheep Knuckle Art & Chat-Room',
@@ -64,7 +66,8 @@ export const work = [
     'deskimg': '#',
     'tabimg': '#',
     'mobimg': '#',
-    'slides': []
+    'slides': ['#'],
+    'uri': '#'
   },
   {
     'title': 'Appition',
@@ -75,17 +78,52 @@ export const work = [
     'deskimg': '#',
     'tabimg': '#',
     'mobimg': '#',
-    'slides': []
+    'slides': ['#'],
+    'uri': '#'
   }
 ];
 
 // Practice projects
 export const practiceWork = [
   {
-    'title': 'first',
-    'description': [],
-    slides: []
-  }
+    'title': 'boop1',
+    'description': [
+      `desc`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      'https://unsplash.it/300/300'
+    ],
+    'uri': '#'
+  },
+  {
+    'title': 'boop2',
+    'description': [
+      `desc`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      'https://unsplash.it/200/300'
+    ],
+    'uri': '#'
+  },
+  {
+    'title': 'boop3',
+    'description': [
+      `desc`
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      'https://unsplash.it/200/200'
+    ],
+    'uri': '#'
+  },
 ];
 
 // skills section skill info

@@ -233,6 +233,8 @@ html, body
   width: 100%
   position: relative
 
+
+
 .description
   padding-top: -2%
   .title
@@ -303,6 +305,95 @@ html, body
     overflow: hidden
     transform: translate(-50%, -50%)
     box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.33)
+
+.slider-wrap
+  position: relative
+  width: 100%
+  margin: 1rem auto
+  &:after
+    padding-top: 33.3%
+    /* enforce ratio*/
+    display: block
+    content: ''
+
+.slider
+  white-space: nowrap
+  //position: relative
+  //height: 300px
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  //overflow: hidden
+
+  .left, .right
+    box-sizing: border-box
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 2
+    height: auto
+    color: white
+    font-size: 2em
+    user-select: none
+    cursor: pointer
+    text-align: center
+    padding: 1%
+    background: rgba(black, 0.1)
+    &:hover
+      background: rgba(black, 0.3)
+
+  .left
+    left: 0
+
+  .right
+    right: 0
+
+.slide
+  display: inline-block
+  position: relative
+  height: 100%
+  width: 33.33%
+  background-size: cover
+  &:hover > .details, &:focus > .details
+    opacity: 1
+  .details
+    white-space: normal
+    position: absolute
+    background: url('https://www.dropbox.com/s/qkasvy18s0m4497/testpaper.png?dl=1'), rgba($background-col, 1)
+    top: 80%
+    width: 160%
+    left: 50%
+    min-height: 50%
+    transform: translateX(-50%)
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    z-index: 1
+    text-align: center
+    opacity: 0
+    transition: opacity 0.1s ease-in-out
+    color: rgba(black, 0.75)
+    a
+      display: inline
+      color: inherit
+    p::first-letter
+      color: rgba(black, 0.75)
+      font-weight: bold
+      font-size: 110%
+    .section-tag
+      text-align: center
+      margin: 0 auto
+      color: rgba(black, 0.8)
+      padding-bottom: 1rem
+      span
+        color: rgba(black, 0.75)
+        font-size: 1.2em
+        padding: 0 0.5rem
+        border-bottom: 0.25rem solid $highlight-col
+        font-family: $main-font
+        font-style: italic
+
+
 
 /* Expeience/skills section */
 select
