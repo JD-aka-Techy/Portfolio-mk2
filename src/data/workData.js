@@ -5,14 +5,18 @@ export const work = [
     'description': [
       `Home page and Resource sharing website built for the
        FreeCodeCamp Manchester User group.`,
+       `I have learnt a huge amount following the FreeCodeCamp syllabus so as my wayof giving back I have
+       been coaching and working with other FCC users at various stages of learning.`,
+       `To aid Manchester FCC and further promote FCC in Manchester we have built a homepage with
+       a list of Useful tutorials and resources.`
     ],
     'tech': [
       'Js', 'React.js', 'React-router', 'Jade/Pug', 'Sass', 'ES6', 'Webpack', 'jsx', 'Firebase'
     ],
-    'deskimg': '#',
-    'tabimg': '#',
-    'mobimg': '#',
-    'slides': ['#'],
+    'deskimg': './assets/workimg/fcc-l.png',
+    'tabimg': './assets/workimg/fcc-m.png',
+    'mobimg': './assets/workimg/fcc-s.png',
+    'slides': ['./assets/workimg/fcc-l.png'],
     'uri': '#'
   },
   {
@@ -27,10 +31,10 @@ export const work = [
     'tech': [
       'Wordpress', 'PHP', 'Js'
     ],
-    'deskimg': '#',
-    'tabimg': '#',
-    'mobimg': '#',
-    'slides': ['#'],
+    'deskimg': './assets/workimg/ef-l.png',
+    'tabimg': './assets/workimg/ef-m.png',
+    'mobimg': './assets/workimg/ef-s.png',
+    'slides': ['./assets/workimg/ef-l.png'],
     'uri': 'http://http://ebonyfeare.com/'
   },
   {
@@ -43,10 +47,10 @@ export const work = [
     'tech': [
       'Js', 'PHP', 'SQL', 'Processing.js', 'Ajax'
     ],
-    'deskimg': '#',
-    'tabimg': '#',
-    'mobimg': '#',
-    'slides': ['#'],
+    'deskimg': './assets/workimg/sk-l.png',
+    'tabimg': './assets/workimg/sk-l.png',
+    'mobimg': './assets/workimg/sk-l.png',
+    'slides': ['./assets/workimg/sk-l.png'],
     'uri': '#'
   },
   {
@@ -61,7 +65,21 @@ export const work = [
     'deskimg': '#',
     'tabimg': '#',
     'mobimg': '#',
-    'slides': ['#'],
+    'slides': ['./assets/workimg/appition-side.png-l.png'],
+    'uri': '#'
+  },
+  {
+    'title': 'Natasha Summer Beauty and lifestyle Blog',
+    'description': [
+      `Deployment, alterations and management of blogspot blog and template.`
+    ],
+    'tech': [
+      'css', 'Javascript', 'xml', 'HTML5'
+    ],
+    'deskimg': './assets/workimg/nate-l.png',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': ['./assets/workimg/nsummer-slide.png'],
     'uri': '#'
   }
 ];

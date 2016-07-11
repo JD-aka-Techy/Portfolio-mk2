@@ -6,7 +6,7 @@ import React from 'react';
 const Quote = ( { quote } ) => (
   (
     <div className="quote" >
-        <img src={ quote.image } />
+        <img src={ quote.image || './assets/testimonialimg/placeholder.png'} />
       <blockquote>
         <cite>
           <span>{ quote.name }</span>
