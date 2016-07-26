@@ -11,7 +11,7 @@ class Slider extends Component {
     super(props);
     this.sliderLength = this.props.slides.length;
     this.state = {
-      slides: this.props.slides
+      slides: this.props.slides.sort(() => 0.5 - Math.random())
     };
   }
 

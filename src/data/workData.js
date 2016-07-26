@@ -71,7 +71,7 @@ export const work = [
   {
     'title': 'Natasha Summer Beauty and lifestyle Blog',
     'description': [
-      `Deployment, alterations and management of blogspot blog and template.`
+      `Deployment, alterations and ongoing management of blogspot blog and template.`
     ],
     'tech': [
       'css', 'Javascript', 'xml', 'HTML5'

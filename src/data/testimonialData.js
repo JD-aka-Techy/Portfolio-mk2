@@ -1,20 +1,20 @@
 // testimoinal information
 export const testimonials = [
   {
-    'name': 'Ebony Feare',
-    'role': 'Actress',
+    'name': 'Natasha Summer',
+    'role': 'Blogger',
     'review': 'tempreview1',
     'image': './assets/testimonialimg/tash.jpg'
   },
   {
-    'name': 'tempname1',
-    'role': 'temprole1',
+    'name': 'Ebony Feare',
+    'role': 'Actress',
     'review': 'tempreview1',
     'image': ''
   },
   {
-    'name': 'tempname1',
-    'role': 'temprole1',
+    'name': 'Marko Lokkila',
+    'role': 'Lead Dev',
     'review': 'tempreview1',
     'image': ''
   },

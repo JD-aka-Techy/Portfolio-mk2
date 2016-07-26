@@ -113,5 +113,227 @@ export const practiceWork = [
       './assets/practiceimg/gol-slide.png'
     ],
     'uri': 'http://codepen.io/JD-aka-Techy/full/BKPqvP/'
-  },
+  },{
+    'title': 'FreeCodeCamp LeaderBoard',
+    'description': [
+      `Consuming two rest Api's using javscripts Promise api this sortable LeaderBoard
+      displays FreeCodeCamp users by points made in the last 30 days and all time.`,
+      `My second React app this was also quite simple but allowed for more complex list
+      manipulation and more complex handler methods.`
+    ],
+    'tech': [
+      'Javascript', 'React', 'Jade/Pug', 'Sass', 'Bootstrap'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/leader-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/bEZXZW/'
+  },{
+    'title': 'MarkDown previewer',
+    'description': [
+      `A previewer for writing GitHub style markdown`,
+      `This is quite a simple app but made for a good first step into using React`
+    ],
+    'tech': [
+      'Javascript', 'React', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/markdon-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/qbyaBm/'
+  },{
+    'title': 'Meteor strikes across the globe',
+    'description': [
+      `This is a D3 render of the earth taken from geoJSON datausing D3's path and projection mothods.`,
+      `Each point rendered is taken from a second JSON file and is dynamically placed and sized based on that data.`,
+      `This was a much more complex app but I feel it is a great example of what can be achieved with D3 with
+      very little code.`
+    ],
+    'tech': [
+      'Javascript', 'D3', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/meteor-d3-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/YWKqjG/'
+  },{
+    'title': 'Camper News',
+    'description': [
+      `This is my implementation of the FreeCodeCamp Camper news data taken from a now unfortunately discontinued api.`,
+      `I completed this application in two versions, the first using plain Jquery and later on using Angular.js`,
+      `while this was good learning experience for my use of angular it also left me using two different approaches to the masonry 
+      style card layout; using Masonry.js with JQuery and css's columns for the angular version.`
+    ],
+    'tech': [
+      'Javascript', 'Angular', 'Jade/Pug', 'Sass', 'JQuery', 'Masonry.js'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/news-slide.jpg'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/pJmrQV/'
+  },{
+    'title': 'Random Quote Generator',
+    'description': [
+      `This project uses a simple REST API call to grab a random quote from an extremely simple PHP json server written specifically for this project.`,
+      `The fade out and in effect is achieved using JQuerys animated methods and a rather simple application of promises to assure the timing was right.`
+    ],
+    'tech': [
+      'Javascript', 'Jade/Pug', 'Sass', 'JQuery', 'PHP', 'Bootstrap'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/quote-gen-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/oXJpvL/'
+  },{
+    'title': 'Recipe Box',
+    'description': [
+      `A React based Recipe Box application using local browser memory.`,
+      `A further experiment in material design with a greater focus on cards layouts and on gradients of varying opacities
+      giving a filtered look to the background image.`,
+      `Which recipes are open and or editable is controlled via the components state so that the user will find the application 
+      as they left it upon later visits.`
+    ],
+    'tech': [
+      'Javascript', 'React', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/recipe-box-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/KVELrJ/'
+  },{
+    'title': 'Simon',
+    'description': [
+      `The Classic game of Simon with two difficulty modes and increasing tempo.`
+    ],
+    'tech': [
+      'Javascript', 'JQuery', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/simon-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/vNjzjd/'
+  },{
+    'title': 'D3 Heat Map',
+    'description': [
+      `A D3 Heat map showing average monthly global land surface temperatures.`
+    ],
+    'tech': [
+      'Javascript', 'D3', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/temps-d3-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/pbzboY/'
+  },{
+    'title': 'Tic-Tac-Toe',
+    'description': [
+      `An unbeatable Game of Noughts and Crosses.`,
+      `This was an interesting task as I took it upon myself to implement a Recursive minimax algorithm
+      for the AI player.`
+    ],
+    'tech': [
+      'Javascript', 'JQuery', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/tic-tac-toe-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/GooMGR/'
+  },{
+    'title': 'Twich JSON Api',
+    'description': [
+      `A Twitch Api app built using angular.js. This was Quite simple to implement but required 
+      an understanding of service factorys and their uses in angular and JSONP as a workaround for 
+      CORS issues.`
+    ],
+    'tech': [
+      'Javascript', 'Angular', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/twitch-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/RPOXNb/'
+  },{
+    'title': 'Local Weather App',
+    'description': [
+      `A simple Weather application using an IP address location service and a weather api.`,
+      `It uses several helper functions for temperature conversions, icon and wind direction lookups.`
+    ],
+    'tech': [
+      'Javascript', 'JQuery', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/weather-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/xGBbyZ/'
+  },{
+    'title': 'WikiPeak',
+    'description': [
+      `A Search App for the wikipedia api.`,
+      `Consuming the wiki api was quite challengeing at first but I feel with the 
+      autocomplete functionality this makes for a neat little application.`
+    ],
+    'tech': [
+      'Javascript', 'JQuery', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/wiki-slide.png'
+    ],
+    'uri': 'http://codepen.io/JD-aka-Techy/full/OMJPwb/'
+  }
+  
 ];
+
+/*
+{
+    'title': '',
+    'description': [
+      ``
+    ],
+    'tech': [
+      'Javascript', 'React', 'Jade/Pug', 'Sass'
+    ],
+    'deskimg': '#',
+    'tabimg': '#',
+    'mobimg': '#',
+    'slides': [
+      './assets/practiceimg/leader-slide.png'
+    ],
+    'uri': ''
+  },
+*/

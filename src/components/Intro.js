@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import SectionTag from './SectionTag';
+import Monkey from './Monkey';
 
 /*
   Intro section component.
@@ -15,7 +16,7 @@ const Intro = ({ intro }) => (
           intro.paragraphs.map((para,i) => <p key={i}>{para}</p>)
         }
         </div>
-        <img src="#" alt="a monkey in a space suit with code monkey written on his chest"/>
+        <Monkey/>
       </div>
     </Card>
   )

@@ -43,6 +43,12 @@ $small-stars: 1200
 $big-stars: 400
 $hero-gradient: radial-gradient(ellipse at bottom, #1B2735 40%, #090A0F 100%)
 
+html
+  max-width: 90em
+  position: relative
+  left: 50%
+  @include center(true, false)
+
 html, body
   // root em
   font-size: 16px
@@ -215,8 +221,23 @@ html, body
       font-size: 2.4rem
       padding: 0 0.25rem
       border-bottom: 0.25rem solid $highlight-col
-  img
+  svg
     display: none
+  
+
+  #monkey
+    animation: float 30s ease-in-out alternate infinite
+
+
+
+
+  @keyframes float
+    0%, 100%
+      transform: translate3d(-40px, -32px, 0) rotate(-3deg)
+    50%
+      transform: translate3d(-30px, -42px, 0) rotate(2deg)
+  
+
 
 
 /* Work component */
@@ -537,9 +558,10 @@ select
       width: 60%
       padding-right: 2rem
       text-align: left
+      float: left
 
-    img
-      position:relative
+    svg
+      position: relative
       width: 40%
       height: 100%
       display: inline-block
