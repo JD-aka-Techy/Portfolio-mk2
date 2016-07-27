@@ -10,8 +10,9 @@ const Intro = ({ intro }) => (
   (
     <Card>
       <div className="intro">
-        <SectionTag text={intro.greeting} />
+        
         <div className="intro-text">
+        <SectionTag text={intro.greeting} />
         {
           intro.paragraphs.map((para,i) => <p key={i}>{para}</p>)
         }

@@ -35,7 +35,7 @@ class SkillsDisplay extends Component {
       <Card>
         <element  className="nav-anchor" id="skills"></element>
         <ul className="skills-wrap">
-          <SectionTag text={"I am experienced with"} />
+          <SectionTag text={"Know-how"} />
           <select onChange={ (e) => this.changeActive(e) }>
             <option >all</option>
             { this.state.groups.map( (group,i) => <option key={i}>{ group }</option> ) }

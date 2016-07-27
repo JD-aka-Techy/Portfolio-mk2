@@ -9,7 +9,7 @@ const Hero = () => (
     <header>
       <div className="big-stars"></div>
       <div className="small-stars"></div>
-      <span>
+      <span className="hero-name">
         <h1>James R. Davenport</h1>
         <h2>Web Developer</h2>
       </span>
