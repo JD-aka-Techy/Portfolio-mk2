@@ -17,7 +17,7 @@ class Slider extends Component {
 
   shuffleSlides(dir) {
     let currSlides = this.state.slides;
-    let end = dir === 'r'
+    let end = dir === 'l'
               ? [currSlides.pop()]
               : currSlides.splice(1, this.sliderLength);
     this.setState({ slides: [...end, ...currSlides] });

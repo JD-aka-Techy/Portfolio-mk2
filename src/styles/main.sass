@@ -62,6 +62,7 @@ $star-img: url('https://upload.wikimedia.org/wikipedia/commons/f/fd/Hubble_image
 
 .hero
   position: fixed
+  overflow: hidden
   // push below nav bar
   padding-top: 3.25rem
   width: 100%
@@ -168,13 +169,36 @@ $card-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
 /* Section tag component */
 
 .section-tag
+  position: relative
   text-align: center
   font-size: 1.7em
-  padding: 1rem 0
+  padding: 3rem 0
   span
-    padding: 0 0.5rem
-    border-bottom: 0.25rem solid $highlight-col
-    font-style: italic
+    position: relative
+    color: black
+    z-index: 2
+    &:before
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%) rotate(4deg)
+      width: 130%
+      min-width: 15rem
+      height: 160%
+      background: rgba($dark-col, 0.9)
+      z-index: -1
+      content: ''
+    &:after
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%) rotate(-4deg)
+      width: 115%
+      min-width: 12rem
+      height: 65px
+      background: $highlight-col
+      z-index: -1
+      content: ''
 
 // navigation link scroll location
 .nav-anchor
@@ -186,6 +210,8 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
 
 .main-navigation
   position: fixed
+  top: 0
+  left: 0
   width: 100%
   text-align: center
   font-size: 1.3rem
@@ -365,6 +391,12 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
   .right
     right: 0
 
+@keyframes pulse
+  0%
+    transform: scale(0.8)
+  100%
+    transform: scale(1.2)
+
 .slide
   position: relative
   display: inline-block
@@ -373,8 +405,18 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
   background-size: cover
   &.active
     width: 60%
-  &:hover > .details, &:focus > .details
-    opacity: 1
+  .info-toggle
+    position: absolute
+    top: 0.5rem
+    right: 0.5rem
+    padding: 0.3rem 0.7rem
+    background: rgba(black, 0.8)
+    border: 1px solid rgba(white, 0.7)
+    border-radius: 50%
+    color: white
+    text-align: center
+    animation: pulse 1s ease infinite alternate
+    
   .details
     position: absolute
     background: $paper-texture
@@ -389,9 +431,8 @@ $nav-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
     // override slide whitespace style
     white-space: normal
     text-align: center
-    opacity: 0
     transition: opacity 0.1s ease-in-out
-    z-index: 1
+    z-index: 10
     a
       display: inline
       color: inherit

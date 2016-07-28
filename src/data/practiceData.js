@@ -17,7 +17,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/calc-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/bdzqRK'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/bdzqRK'
   },
   {
     'title': 'A Rogue-Like Dungeon Crawler',
@@ -37,7 +37,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/dcrawler-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/zqQYBE/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/zqQYBE/'
   },
   {
     'title': 'Doping in Professional Cycleing',
@@ -56,7 +56,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/dope-d3-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/MyNZEv/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/MyNZEv/'
   },
   {
     'title': 'State Contiguity',
@@ -76,7 +76,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/flags-d3-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/PzYyVj/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/PzYyVj/'
   },
   {
     'title': 'U.S Quarterly GDP',
@@ -93,7 +93,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/gdp-d3-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/eZoBxv/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/eZoBxv/'
   },
   {
     'title': 'Conways Game of Life',
@@ -112,7 +112,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/gol-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/BKPqvP/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/BKPqvP/'
   },{
     'title': 'FreeCodeCamp LeaderBoard',
     'description': [
@@ -130,7 +130,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/leader-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/bEZXZW/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/bEZXZW/'
   },{
     'title': 'MarkDown previewer',
     'description': [
@@ -146,7 +146,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/markdon-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/qbyaBm/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/qbyaBm/'
   },{
     'title': 'Meteor strikes across the globe',
     'description': [
@@ -164,7 +164,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/meteor-d3-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/YWKqjG/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/YWKqjG/'
   },{
     'title': 'Camper News',
     'description': [
@@ -182,7 +182,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/news-slide.jpg'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/pJmrQV/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/pJmrQV/'
   },{
     'title': 'Random Quote Generator',
     'description': [
@@ -198,7 +198,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/quote-gen-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/oXJpvL/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/oXJpvL/'
   },{
     'title': 'Recipe Box',
     'description': [
@@ -217,7 +217,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/recipe-box-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/KVELrJ/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/KVELrJ/'
   },{
     'title': 'Simon',
     'description': [
@@ -232,7 +232,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/simon-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/vNjzjd/'
+    'uri': 'http://codepen.io/JD-aka-Techy/http://codepen.io/JD-aka-Techy/bdzqRK/vNjzjd/'
   },{
     'title': 'D3 Heat Map',
     'description': [
@@ -247,7 +247,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/temps-d3-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/pbzboY/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/pbzboY/'
   },{
     'title': 'Tic-Tac-Toe',
     'description': [
@@ -264,7 +264,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/tic-tac-toe-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/GooMGR/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/GooMGR/'
   },{
     'title': 'Twich JSON Api',
     'description': [
@@ -281,7 +281,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/twitch-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/RPOXNb/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/RPOXNb/'
   },{
     'title': 'Local Weather App',
     'description': [
@@ -297,7 +297,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/weather-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/xGBbyZ/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/xGBbyZ/'
   },{
     'title': 'WikiPeak',
     'description': [
@@ -314,7 +314,7 @@ export const practiceWork = [
     'slides': [
       './assets/practiceimg/wiki-slide.png'
     ],
-    'uri': 'http://codepen.io/JD-aka-Techy/full/OMJPwb/'
+    'uri': 'http://codepen.io/JD-aka-Techy/pen/OMJPwb/'
   }
   
 ];
